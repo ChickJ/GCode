@@ -1,5 +1,6 @@
 namespace _Namespace {
 
+// This file was GCode generated. Feel free to modify the result.
 // DotNetCore OK!
 
 using System;
