@@ -1,0 +1,36 @@
+#!/bin/bash
+SCRIPT_DIR=$(dirname $(realpath -s "$0"))
+LINK_DIR=$(dirname $(realpath -s "$(readlink -f "$0")"))
+if [ ! "${SCRIPT_DIR}" == "${LINK_DIR}" ]; then
+    SCRIPT_DIR="${LINK_DIR}"
+fi
+
+OPTIND=1
+DEFINE="-D _Namespace=SE"
+
+while getopts "ht:D:U": opt; do
+    case "${opt}" in
+    h)
+        echo GCode version 0.0.1
+        exit 0
+        ;;
+    \?)
+        echo "Invalid option: -$OPTARG" >&2
+        ;;
+    :)
+        echo "Option -$OPTARG requires an argument." >&2
+        exit 1
+        ;;
+    t)
+        FNAME="$OPTARG.m4"
+        ;;
+    D)
+        DEFINE="$DEFINE -D $OPTARG"
+        ;;
+    esac
+done
+
+
+m4 -I "${SCRIPT_DIR}/Templates" \
+    ${DEFINE} \
+    "${FNAME}"
