@@ -1,7 +1,7 @@
 namespace _Namespace {
 
 // This file was GCode generated. Feel free to modify the result.
-// DotNetCore OK!
+// .NET Core OK!
 
 using System.IO;
 using System.Text;
@@ -53,7 +53,8 @@ public sealed partial class _TClass : ILayout<TClass>
     /// <param name="result">When this method returns, contains the _TClass
     /// value equivalent to the text contains in s if the conversion
     /// succeeded, or null if the conversion failed. This parameter is passed
-    /// uninitialized; any value originally supplied in result will be
+    /// uninitialized; any value originally supplied in result will
+    /// be
     /// overwritten.</param>
     /// <returns>true if s was converted successfully; otherwise, false.</returns>
     public bool TryRead(string s, out TClass result)

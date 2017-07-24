@@ -1,7 +1,7 @@
 namespace _Namespace {
 
 // This file was GCode generated. Feel free to modify the result.
-// DotNetCore OK!
+// .NET Core OK!
 
 using System;
 using System.Collections.Generic;
@@ -52,12 +52,7 @@ public sealed class _TClass()EqualityComparer : EqualityComparer<TClass>
         if (ReferenceEquals(null, x) || ReferenceEquals(null, y))
             return false;
 
-        // *******************   IMPLEMENTATION    ****************************
-        {
-            // Missing
-        }
-        // *******************   IMPLEMENTATION    ****************************
-        return true;
+        throw new System.NotImplementedException();
     }
 
     /// <summary>
@@ -70,12 +65,6 @@ public sealed class _TClass()EqualityComparer : EqualityComparer<TClass>
     /// reference type and obj is null.</exception>
     public override int GetHashCode(TClass obj)
     {
-        int hash = 0;
-        // *******************   IMPLEMENTATION    ****************************
-        {
-            // Missing
-        }
-        // *******************   IMPLEMENTATION    ****************************
-        return hash;
+        throw new System.NotImplementedException();
     }
 }} // class:namespace
