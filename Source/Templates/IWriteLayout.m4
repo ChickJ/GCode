@@ -14,7 +14,7 @@ using TClass = _TClass;
 using TFormat = _TFormat;
 
 /// <remarks>
-/// Extend <see cref="_TClass()"/> to support IWriteLayout<_TClass>.
+/// Extend <see cref="_TClass()"/> to support IWriteLayout&lt;TClass()&gt;.
 /// IWriteLayout is a way of serializing objects to/from strings,
 /// StringBuilders and Streams.
 ///

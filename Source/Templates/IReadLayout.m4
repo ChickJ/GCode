@@ -11,11 +11,11 @@ using System.Text;
 using TClass = _TClass;
 
 // The default serialization format for TClass.
-using TFormat = _TFormat;
+using TFormat = _TClass()._TFormat();
 
 /// <remarks>
 /// Extend the <see cref="_TClass()"/> object to support
-/// IReadLayout<_TClass>. IReadLayout is way of reading objects
+/// IReadLayout&lt;_TClass&gt;. IReadLayout is way of reading objects
 /// from strings, StringBuilders and Streams.
 ///
 /// Todo: Mark <see cref="_TClass()"/> partial.</remarks>

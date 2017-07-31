@@ -64,34 +64,65 @@ using TClass = _TClass;
 /// </summary>
 public static class _TClass()SumClass {
 
-/// <summary>
-/// Represents unit tests for the _TClass().Sum.AreEqual
-/// method.</summary>
-public sealed class AreEqualMethod
-{
     /// <summary>
-    /// The sums of the same reference must be equal.
-    /// </summary>
-    [Fact, Trait("GCode", "Sum")]
-    public void SameReferenceAreEqual()
+    /// Represents unit tests for the _TClass().Sum.AreEqual
+    /// method.</summary>
+    public sealed class AreEqualMethod
     {
-        var x = new TClass();
-        var y = x;
-        var areEqual = TClass.Sum.AreEqual(x, y);
-        Assert.True(areEqual);
-    }
+        /// <summary>
+        /// The sums of the same reference must be equal.
+        /// </summary>
+        [Fact, Trait("GCode", "Sum")]
+        public void SameReferenceAreEqual()
+        {
+            var x = new TClass();
+            var y = x;
+            var areEqual = TClass.Sum.AreEqual(x, y);
+            Assert.True(areEqual);
+        }
+
+        /// <summary>
+        /// Null comparison returns false
+        /// </summary>
+        [Fact, Trait("GCode", "Sum")]
+        public void NullNotEqual()
+        {
+            var x = new TClass();
+            var areEqual = TClass.Sum.AreEqual(x, null);
+            Assert.False(areEqual);
+        }
+
+        /// <summary>
+        /// Two different instances coming from default constructors
+        /// should be equal.
+        /// </summary>
+        [Fact, Trait("GCode", "Sum")]
+        public void TwoDefaultsAreEqual()
+        {
+            var x = new TClass();
+            var y = new TClass();
+            var areEqual = TClass.Sum.AreEqual(x,y);
+            Assert.True(areEqual);
+        }
+    } // AreEqualMethod
 
     /// <summary>
-    /// Null comparison returns false
-    /// </summary>
-    [Fact, Trait("Comparer", "Equality")]
-    public void NullNotEqual()
+    /// Represents unit tests for the _TClass().Sum.GetHashCode
+    /// method.</summary>
+    public sealed class GetHashCodeMethod
     {
-        var x = new TClass();
-        var areEqual = TClass.Sum.AreEqual(x, null);
-        Assert.False(areEqual);
-    }
-} // AreEqualMethod
-
+        /// <summary>
+        /// The hash codes of two different instance should be the same.
+        /// </summary>
+        [Fact, Trait("GCode", "GetHashCode")]
+        public void TwoDefaultsAreEqual()
+        {
+            var x = new TClass();
+            var y = new TClass();
+            var hx = TClass.Sum.GetHashCode(x);
+            var hy = TClass.Sum.GetHashCode(x);
+            Assert.Equal(hx, hy);
+        }
+    } // GetHashCodeMethod
 }} // class:namespace
 #endif // CompileUnitTests

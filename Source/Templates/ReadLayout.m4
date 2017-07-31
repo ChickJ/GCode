@@ -12,10 +12,10 @@ using System.Text;
 using TClass = _TClass;
 
 // The default serialization format for TClass.
-using TFormat = _TFormat;
+using TFormat = _TClass()._TFormat();
 
 partial class _TClass {
-public sealed class Layout : ReadLayout<TClass>, IReadLayoutFormat<TClass>
+public sealed class _TFormat : ReadLayout<TClass>, IReadLayoutFormat<TClass>
 {
     /// <summary>
     /// Tries to convert the string representation of a <see cref="_TClass()"/>
@@ -44,13 +44,10 @@ public sealed class Layout : ReadLayout<TClass>, IReadLayoutFormat<TClass>
     /// <param name="s">A StringBuilder that contains the text representation
     /// of the _TClass. The string is interpreted using the default _TFormat
     /// object.</param>
-    /// <param name="format">An object that implements
-    /// ILayout&lt;_TClass&gt;. This object controls the format of
-    /// result.</param>
     /// <param name="result">When this method returns, contains the _TClass
     /// value equivalent to the text contains in s if the conversion
     /// succeeded, or null if the conversion failed. This parameter is passed
-    /// uninitialized; any value originally supplied in result will be
+    /// initialized; any value originally supplied in result may be
     /// overwritten.</param>
     /// <returns>true if s was converted successfully; otherwise, false.</returns>
     public override bool TryReadInto(StringBuilder s, TClass result)
