@@ -23,16 +23,16 @@ partial class _TClass : ILayout<TClass>
 {
     /// <summary>
     /// Tries to convert the string representation of a <see cref="_TClass()"/>
-    /// to its _TClass equivalent, and returns a value that
-    /// indicates whether the conversion succeeded.
+    /// to its <see cref="_TClass()"/> equivalent, and returns a
+    /// value that indicates whether the conversion succeeded.
     /// </summary>
     /// <param name="s">A string that contains the text representation of the
-    /// _TClass. The string is interpreted using the specified format
+    /// <see cref="_TClass()"/> . The string is interpreted using the specified format
     /// object.</param>
     /// <param name="format">An object that implements
     /// ILayout&lt;_TClass&gt;. This object controls the format of
     /// result.</param>
-    /// <param name="result">When this method returns, contains the _TClass
+    /// <param name="result">When this method returns, contains the <see cref="_TClass()"/>
     /// value equivalent to the text contains in s if the conversion
     /// succeeded, or null if the conversion failed. This parameter is passed
     /// uninitialized; any value originally supplied in result will be
@@ -46,13 +46,13 @@ partial class _TClass : ILayout<TClass>
 
     /// <summary>
     /// Tries to convert the string representation of a <see cref="_TClass()"/>
-    /// to its _TClass equivalent, and returns a value that
+    /// to its <see cref="_TClass()"/>  equivalent, and returns a value that
     /// indicates whether the conversion succeeded.
     /// </summary>
     /// <param name="s">A string that contains the text representation of the
-    /// _TClass. The string is interpreted using the default _TFormat
+    /// <see cref="_TClass()"/> . The string is interpreted using the default <see cref="_TFormat()"/>
     /// object.</param>
-    /// <param name="result">When this method returns, contains the _TClass
+    /// <param name="result">When this method returns, contains the <see cref="_TClass()"/>
     /// value equivalent to the text contains in s if the conversion
     /// succeeded, or null if the conversion failed. This parameter is passed
     /// uninitialized; any value originally supplied in result will
@@ -67,16 +67,16 @@ partial class _TClass : ILayout<TClass>
 
     /// <summary>
     /// Tries to convert the string representation of a <see cref="_TClass()"/>
-    /// to its _TClass equivalent, and returns a value that
+    /// to its <see cref="_TClass()"/>  equivalent, and returns a value that
     /// indicates whether the conversion succeeded.
     /// </summary>
     /// <param name="s">A StringBuilder that contains the text representation
-    /// of the _TClass. The string is interpreted using the specified format
+    /// of the <see cref="_TClass()"/> . The string is interpreted using the specified format
     /// object.</param>
     /// <param name="format">An object that implements
     /// ILayout&lt;_TClass&gt;. This object controls the format of
     /// result.</param>
-    /// <param name="result">When this method returns, contains the _TClass
+    /// <param name="result">When this method returns, contains the <see cref="_TClass()"/>
     /// value equivalent to the text contains in s if the conversion
     /// succeeded, or null if the conversion failed. This parameter is passed
     /// uninitialized; any value originally supplied in result will be
@@ -90,13 +90,13 @@ partial class _TClass : ILayout<TClass>
 
     /// <summary>
     /// Tries to convert the string representation of a <see cref="_TClass()"/>
-    /// to its _TClass equivalent, and returns a value that
+    /// to its <see cref="_TClass()"/>  equivalent, and returns a value that
     /// indicates whether the conversion succeeded.
     /// </summary>
     /// <param name="s">A StringBuilder that contains the text representation
-    /// of the _TClass. The string is interpreted using the default _TFormat
+    /// of the <see cref="_TClass()"/> . The string is interpreted using the default <see cref="_TFormat()"/>
     /// object.</param>
-    /// <param name="result">When this method returns, contains the _TClass
+    /// <param name="result">When this method returns, contains the <see cref="_TClass()"/>
     /// value equivalent to the text contains in s if the conversion
     /// succeeded, or null if the conversion failed. This parameter is passed
     /// uninitialized; any value originally supplied in result will be
@@ -110,16 +110,16 @@ partial class _TClass : ILayout<TClass>
 
     /// <summary>
     /// Tries to convert the string representation of a <see cref="_TClass()"/>
-    /// to its _TClass equivalent, and returns a value that
+    /// to its <see cref="_TClass()"/>  equivalent, and returns a value that
     /// indicates whether the conversion succeeded.
     /// </summary>
     /// <param name="s">A Stream that contains the text representation
-    /// of the _TClass. The string is interpreted using the specified format
+    /// of the <see cref="_TClass()"/> . The string is interpreted using the specified format
     /// object.</param>
     /// <param name="format">An object that implements
     /// ILayout&lt;_TClass&gt;. This object controls the format of
     /// result.</param>
-    /// <param name="result">When this method returns, contains the _TClass
+    /// <param name="result">When this method returns, contains the <see cref="_TClass()"/>
     /// value equivalent to the text contains in s if the conversion
     /// succeeded, or null if the conversion failed. This parameter is passed
     /// uninitialized; any value originally supplied in result will be
@@ -133,13 +133,13 @@ partial class _TClass : ILayout<TClass>
 
     /// <summary>
     /// Tries to convert the string representation of a <see cref="_TClass()"/>
-    /// to its _TClass equivalent, and returns a value that
+    /// to its <see cref="_TClass()"/>  equivalent, and returns a value that
     /// indicates whether the conversion succeeded.
     /// </summary>
     /// <param name="s">A Stream that contains the text representation
-    /// of the _TClass. The string is interpreted using the default _TFormat
+    /// of the <see cref="_TClass()"/> . The string is interpreted using the default <see cref="_TFormat()"/>
     /// object.</param>
-    /// <param name="result">When this method returns, contains the _TClass
+    /// <param name="result">When this method returns, contains the <see cref="_TClass()"/>
     /// value equivalent to the text contains in s if the conversion
     /// succeeded, or null if the conversion failed. This parameter is passed
     /// uninitialized; any value originally supplied in result will be
@@ -153,16 +153,16 @@ partial class _TClass : ILayout<TClass>
 
     /// <summary>
     /// Tries to convert the string representation of a <see cref="_TClass()"/>
-    /// to its _TClass equivalent, and returns a value that
+    /// to its <see cref="_TClass()"/>  equivalent, and returns a value that
     /// indicates whether the conversion succeeded.
     /// </summary>
     /// <param name="s">A Stream that contains the text representation
-    /// of the _TClass. The string is interpreted using the specified format
+    /// of the <see cref="_TClass()"/> . The string is interpreted using the specified format
     /// object.</param>
     /// <param name="format">An object that implements
     /// ILayout&lt;_TClass&gt;. This object controls the format of
     /// result.</param>
-    /// <param name="result">When this method returns, contains the _TClass
+    /// <param name="result">When this method returns, contains the <see cref="_TClass()"/>
     /// value equivalent to the text contains in s if the conversion
     /// succeeded, or undefined if the conversion failed. This parameter is passed
     /// initialized; any value originally supplied in result may be
@@ -176,13 +176,13 @@ partial class _TClass : ILayout<TClass>
 
     /// <summary>
     /// Tries to convert the string representation of a <see cref="_TClass()"/>
-    /// to its _TClass equivalent, and returns a value that
+    /// to its <see cref="_TClass()"/>  equivalent, and returns a value that
     /// indicates whether the conversion succeeded.
     /// </summary>
     /// <param name="s">A Stream that contains the text representation
-    /// of the _TClass. The string is interpreted using the default _TFormat
+    /// of the <see cref="_TClass()"/> . The string is interpreted using the default <see cref="_TFormat()"/>
     /// object.</param>
-    /// <param name="result">When this method returns, contains the _TClass
+    /// <param name="result">When this method returns, contains the <see cref="_TClass()"/>
     /// value equivalent to the text contains in s if the conversion
     /// succeeded, or undefined if the conversion failed. This parameter is passed
     /// initialized; any value originally supplied in result may be
@@ -196,16 +196,16 @@ partial class _TClass : ILayout<TClass>
 
     /// <summary>
     /// Tries to convert the string representation of a <see cref="_TClass()"/>
-    /// to its _TClass equivalent, and returns a value that
+    /// to its <see cref="_TClass()"/>  equivalent, and returns a value that
     /// indicates whether the conversion succeeded.
     /// </summary>
     /// <param name="s">A StringBuilder that contains the text representation
-    /// of the _TClass. The string is interpreted using the default _TFormat
+    /// of the <see cref="_TClass()"/> . The string is interpreted using the default <see cref="_TFormat()"/>
     /// object.</param>
     /// <param name="format">An object that implements
     /// ILayout&lt;_TClass&gt;. This object controls the format of
     /// result.</param>
-    /// <param name="result">When this method returns, contains the _TClass
+    /// <param name="result">When this method returns, contains the <see cref="_TClass()"/>
     /// value equivalent to the text contains in s if the conversion
     /// succeeded, or null if the conversion failed. This parameter is passed
     /// uninitialized; any value originally supplied in result will be
@@ -219,13 +219,13 @@ partial class _TClass : ILayout<TClass>
 
     /// <summary>
     /// Tries to convert the string representation of a <see cref="_TClass()"/>
-    /// to its _TClass equivalent, and returns a value that
+    /// to its <see cref="_TClass()"/>  equivalent, and returns a value that
     /// indicates whether the conversion succeeded.
     /// </summary>
     /// <param name="s">A StringBuilder that contains the text representation
-    /// of the _TClass. The string is interpreted using the default _TFormat
+    /// of the <see cref="_TClass()"/> . The string is interpreted using the default <see cref="_TFormat()"/>
     /// object.</param>
-    /// <param name="result">When this method returns, contains the _TClass
+    /// <param name="result">When this method returns, contains the <see cref="_TClass()"/>
     /// value equivalent to the text contains in s if the conversion
     /// succeeded, or null if the conversion failed. This parameter is passed
     /// uninitialized; any value originally supplied in result will be
@@ -266,7 +266,7 @@ partial class _TClass : ILayout<TClass>
     /// succeeded.
     /// </summary>
     /// <param name="s">A <see cref="_TClass()"/> to convert to a string. The string
-    /// format is defined by the default _TFormat object.</param>
+    /// format is defined by the default <see cref="_TFormat()"/>  object.</param>
     /// <param name="dst">When this method returns, contains the string
     /// value equivalent to the <see cref="_TClass()"/> s if the conversion
     /// succeeded, or empty if the conversion failed. This parameter is passed
@@ -307,7 +307,7 @@ partial class _TClass : ILayout<TClass>
     /// succeeded.
     /// </summary>
     /// <param name="s">A <see cref="_TClass()"/> to convert to a string. The string
-    /// format is defined by the default _TFormat object.</param>
+    /// format is defined by the default <see cref="_TFormat()"/>  object.</param>
     /// <param name="dst">When this method returns, contains the string
     /// value equivalent to the <see cref="_TClass()"/> s if the conversion
     /// succeeded, or empty if the conversion failed. This parameter is passed
@@ -348,7 +348,7 @@ partial class _TClass : ILayout<TClass>
     /// succeeded.
     /// </summary>
     /// <param name="s">A <see cref="_TClass()"/> to convert to a string. The string
-    /// format is defined by the default _TFormat object.</param>
+    /// format is defined by the default <see cref="_TFormat()"/>  object.</param>
     /// <param name="dst">When this method returns, contains the string
     /// value equivalent to the <see cref="_TClass()"/> s if the conversion
     /// succeeded, or null if the conversion failed. This parameter is passed

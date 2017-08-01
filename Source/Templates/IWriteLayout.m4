@@ -50,7 +50,7 @@ partial class _TClass : IWriteLayout<TClass>
     /// indicates whether the conversion succeeded.
     /// </summary>
     /// <param name="s">A <see cref="_TClass()"/> to convert to a string. The string
-    /// format is defined by the default _TFormat object.</param>
+    /// format is defined by the default <see cref="_TFormat()"/>  object.</param>
     /// <param name="dst">When this method returns, contains the string
     /// value equivalent to the <see cref="_TClass()"/> s if the conversion
     /// succeeded, or empty if the conversion failed. This parameter is
@@ -91,7 +91,7 @@ partial class _TClass : IWriteLayout<TClass>
     /// indicates whether the conversion succeeded.
     /// </summary>
     /// <param name="s">A <see cref="_TClass()"/> to convert to a string. The string
-    /// format is defined by the default _TFormat object.</param>
+    /// format is defined by the default <see cref="_TFormat()"/>  object.</param>
     /// <param name="dst">When this method returns, contains the string
     /// value equivalent to the <see cref="_TClass()"/> s if the conversion
     /// succeeded, or empty if the conversion failed. This parameter is passed
@@ -132,7 +132,7 @@ partial class _TClass : IWriteLayout<TClass>
     /// indicates whether the conversion succeeded.
     /// </summary>
     /// <param name="s">A <see cref="_TClass()"/> to convert to a string. The string
-    /// format is defined by the default _TFormat object.</param>
+    /// format is defined by the default <see cref="_TFormat()"/>  object.</param>
     /// <param name="dst">When this method returns, contains the string
     /// value equivalent to the <see cref="_TClass()"/> s if the conversion
     /// succeeded, or null if the conversion failed. This parameter is passed
