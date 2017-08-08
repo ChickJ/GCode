@@ -325,6 +325,23 @@ partial class _TClass : ILayout<TClass>
     /// equivalent, and returns a value that indicates whether the conversion
     /// succeeded.
     /// </summary>
+    /// <param name="dst">When this method returns, contains the string
+    /// value equivalent to the <see cref="_TClass()"/> s if the conversion
+    /// succeeded, or empty if the conversion failed. This parameter is passed
+    /// initialized; any value originally supplied in result will be
+    /// overwritten.</param>
+    /// <returns>true if s was converted successfully; otherwise, false.</returns>
+    public bool TryWrite(StringBuilder dst)
+    {
+        var fmt = new TFormat();
+        return fmt.TryWrite(this, dst);
+    }
+
+    /// <summary>
+    /// Tries to convert the specified <see cref="_TClass()"/> object to its string
+    /// equivalent, and returns a value that indicates whether the conversion
+    /// succeeded.
+    /// </summary>
     /// <param name="s">A <see cref="_TClass()"/> to convert to a string. The string
     /// format is defined by the specified format.</param>
     /// <param name="format">An object that implements
