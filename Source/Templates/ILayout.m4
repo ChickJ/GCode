@@ -15,8 +15,8 @@ using TFormat = _TFormat;
 
 /// <remarks>
 /// Extend the <see cref="_TClass()"/> object to support
-/// ILayout<_TClass>. ILayout is a way to serialize objects
-/// to/from strings, StringBuilders and Streams.
+/// ILayout&lt;_TClass&gt;. ILayout is a way to serialize
+/// objects to/from strings, StringBuilders and Streams.
 ///
 /// TODO: Mark <see cref="_TClass()"/> partial.</remarks>
 partial class _TClass : ILayout<TClass>
