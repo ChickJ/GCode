@@ -11,7 +11,7 @@ using System.Text;
 using TClass = _TClass;
 
 // The default serialization format for TClass.
-using TFormat = _TFormat;
+using TFormat = _TClass._TFormat;
 
 /// <remarks>
 /// Extend the <see cref="_TClass()"/> object to support
@@ -331,6 +331,23 @@ partial class _TClass : ILayout<TClass>
     /// initialized; any value originally supplied in result will be
     /// overwritten.</param>
     /// <returns>true if s was converted successfully; otherwise, false.</returns>
+    public bool TryWrite(out string dst)
+    {
+        var fmt = new TFormat();
+        return fmt.TryWrite(this, out dst);
+    }
+
+    /// <summary>
+    /// Tries to convert the specified <see cref="_TClass()"/> object to its string
+    /// equivalent, and returns a value that indicates whether the conversion
+    /// succeeded.
+    /// </summary>
+    /// <param name="dst">When this method returns, contains the string
+    /// value equivalent to the <see cref="_TClass()"/> s if the conversion
+    /// succeeded, or empty if the conversion failed. This parameter is passed
+    /// initialized; any value originally supplied in result will be
+    /// overwritten.</param>
+    /// <returns>true if s was converted successfully; otherwise, false.</returns>
     public bool TryWrite(StringBuilder dst)
     {
         var fmt = new TFormat();
@@ -376,5 +393,19 @@ partial class _TClass : ILayout<TClass>
     {
         var fmt = new TFormat();
         return fmt.TryWrite(s, out dst);
+    }
+
+    /// <summary>
+    /// Try converting the current <see cref="_TClass()"/> object to
+    /// its string equivalent.
+    /// </summary>
+    /// <returns>Returns a string representation of
+    /// <see cref="_TClass()"/> if the class was converted
+    /// successfully; otherwise, null.</returns>
+    public string Write()
+    {
+        string result = null;
+        TryWrite(this, out result);
+        return result;
     }
 }} // class:namespace
